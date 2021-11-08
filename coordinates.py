@@ -13,18 +13,28 @@ R4 = (1, 2, 0)
 R5 = (-3, 12, -5)
 """
 
+R1 = (1, 4, 2)
+R2 = (3, 1, 9)
+R3 = (0, 3, 4)
+R4 = (1, 2, 0)
+R5 = (-3, 12, -5)
 
-def spaceR(x, y, z):
+
+def spaceR(r):
+    [x, y, z] = r
     n = 7
     sum_r = x + y + z
-    if x < 0 or y < 0 or z < 0:
-        raise ValueError("R coordinates should be >= 0")
-    elif x <= n and y <= n and z <= n:
-        if sum_r > n:
-            return sum_r
+    try:
+        if x < 0 or y < 0 or z < 0:
+            raise ValueError("R coordinates should be >= 0")
+        elif x <= n and y <= n and z <= n:
+            if sum_r > n:
+                return sum_r
+            else:
+                return True
         else:
-            return True
-    else:
-        return False
-
-#print(spaceR(-3, 12, -5))       
+            return False
+    except ValueError as err:
+        return (f'Oh no, there was an error,\n{err}')
+  
+#print(spaceR(R5))       

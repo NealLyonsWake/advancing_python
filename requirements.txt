@@ -1,0 +1,16 @@
+black==21.10b0
+certifi==2021.10.8
+chardet==3.0.4
+charset-normalizer==2.0.7
+click==8.0.3
+colorama==0.4.4
+idna==2.7
+kanye==0.1.0
+mypy-extensions==0.4.3
+pathspec==0.9.0
+platformdirs==2.4.0
+regex==2021.11.2
+requests==2.20.0
+tomli==1.2.2
+typing-extensions==3.10.0.2
+urllib3==1.24.3

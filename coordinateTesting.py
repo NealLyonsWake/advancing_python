@@ -28,13 +28,13 @@ class TestCoordinates(unittest.TestCase):
         """
         Test will fail if no R tuple value is < 0; tests error handler only. 
         """
-        self.assertRaises(ValueError, spaceR, -3, 12, -5)
+        self.assertEqual('Oh no, there was an error,\nR coordinates should be >= 0', spaceR(R5))
 
     def test_R_conforms_to_N(self):
         """
         Tests R tuple fully conforms to >= 0 and no individual or summed R tuple coordinate exceeds N = 7. 
         """
-        self.assertTrue(spaceR(1, 2, 0))
+        self.assertTrue(spaceR(R3))
 
 
 if __name__ == "__main__":
