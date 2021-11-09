@@ -12,9 +12,9 @@ My work for this section is in `listComprehension.py`
 
 ## Assertion Exercise:
 My work for this section is in `coordinates.py` and `coordinateTesting.py`
-Assume a cartesian cordinate space R = R(x,y,z).
-Each of the co-ordinates, (x,y,z) can have only integer values >= 0 The maximum value each of the co-odinates can assume,
+1. Assume a cartesian cordinate space R = R(x,y,z).
+2. Each of the co-ordinates, (x,y,z) can have only integer values >= 0 The maximum value each of the co-odinates can assume,
 and the sum of all three co-ordinates (the tuple) is capped at integer N.
-Using assertion, verify that a given set of coordintes match the expectation for a set value of N = 7.
+3. Using assertion, verify that a given set of coordintes match the expectation for a set value of N = 7.
 
 # Enjoy!
